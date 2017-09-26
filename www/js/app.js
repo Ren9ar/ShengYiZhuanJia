@@ -56,17 +56,26 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services'])
 
       .state('login',{
         url:'/login',
-        templateUrl:'views/forgetpassword/login.html',
+        templateUrl:'views/login/login.html',
         controller:'LoginCtrl'
       })
 
       .state('welcome', {
         url: '/welcome',
-        templateUrl: 'views/welcome/welcome.html',
+        templateUrl: 'views/welcome/welcome.html'
       })
       .state('main', {
         url: '/',
         controller: 'MainCtrl'
+      })
+      .state('app.home', {
+        url: '/home',
+        views:{
+          'menuContent':{
+            templateUrl:'views/home/home.html',
+            controller:'HomeCtrl'
+          }
+        }
       })
 
       .state('app.playlists', {
