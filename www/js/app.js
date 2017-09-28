@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services'])
       })
       .state('forgetpassword',{
         url:'/forgetpassword',
-        templateUrl:'views/forgetpassword/forgetpassword.html'
+        templateUrl:'views/forgetpassword/forgotpassword.html'
       })
 
       .state('login',{
@@ -74,6 +74,43 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services'])
           'menuContent':{
             templateUrl:'views/home/home.html',
             controller:'HomeCtrl'
+          }
+        }
+      })
+      .state('app.category-list',{
+        url:'/category-list',
+        views:{
+          'menuContent':{
+            templateUrl: 'views/category/category-list.html',
+            controller: 'CategoryListCtrl'
+          }
+        }
+      })
+      .state('app.category-add',{
+        url:'/category-add/:id/:name',
+        views:{
+          'menuContent':{
+            templateUrl: 'views/category/category-add.html',
+            controller: 'CategoryAddCtrl'
+          }
+        }
+      })
+      .state('app.shop',{
+        url:'/shop',
+        views:{
+          'menuContent':{
+            templateUrl:'views/shop/shop.html',
+            controller:'ShopCtrl'
+          }
+        }
+      })
+      .state('app.shop-edit',{
+        url:'/shop-edit',
+        params:{title:'',property:''},
+        views: {
+          'menuContent': {
+            templateUrl: 'views/shop/shop-edit.html',
+            controller: 'ShopEditCtrl'
           }
         }
       })
