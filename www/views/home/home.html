@@ -1,6 +1,11 @@
 <ion-view title="首页">
+  <ion-nav-buttons side="right">
+    <a class="button button-clear button-icon ion-ios-plus-empty" href="#/app/category-list">
+    </a>
+  </ion-nav-buttons>
   <ion-content>
-    <img class="full-image image-title" src="/views/home/img/androidbanner.png">
+
+    <img class="full-image image-title" src="img/androidbanner.png">
     <div class="row stable-bg">
       <div class="col col-33">
         <h6>今日报表</h6>
@@ -20,75 +25,76 @@
     </div>
 
     <div class="row row-wrap row-no-padding">
-      <div class="col col-25 col-border quick-action-item">
+      <div class="col col-25 col-border quick-action-item" ui-sref="app.product-add">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-android-add-circle  energized"></i>
           <h5>新增商品</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-android-list energized"></i>
           <h5>收银记账</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-android-person-add energized"></i>
           <h5>新增会员</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-usd energized"></i>
           <h5>支出管理</h5>
         </a>
       </div>
-      <div class="col col-25 col-border quick-action-item">
+      <div class="col col-25 col-border quick-action-item" ui-sref="app.product-list">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-android energized"></i>
           <h5>商品管理</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-pinterest energized"></i>
           <h5>查询销售</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-android-contacts energized"></i>
           <h5>会员管理</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-reddit energized"></i>
           <h5>智能分析</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-freebsd-devil energized"></i>
           <h5>供应商管理</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-chrome energized"></i>
           <h5>挂单</h5>
         </a>
       </div>
       <div class="col col-25 col-border quick-action-item">
         <a class="tab-item shortcut" href="">
-          <i class="icon ion-android-apps energized"></i>
+          <i class="icon ion-social-snapchat energized"></i>
           <h5>高级功能</h5>
         </a>
       </div>
     </div>
   </ion-content>
-  <div class="bar bar-footer" style="background-image: none;">
+  <company-directive bottom="5px"></company-directive>
+  <!--<div class="bar bar-footer" style="background-image: none;">
     <h1 class="title">©2010-2016 生意专家</h1>
-  </div>
+  </div>-->
 </ion-view>

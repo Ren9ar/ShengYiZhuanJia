@@ -4,8 +4,8 @@
     $scope.title = $stateParams.title;
     $scope.property = $stateParams.property;
     $scope.shop = localStorageService.get('Shop',{
-      phone:'15959155146',
-      createTime:'2017-9-28 15:37:30',
+      phone:'',
+      createTime:'',
       name:'',
       ab:'',
       boss:'',
